@@ -1,5 +1,5 @@
 import numpy as np
-import random # https://docs.scipy.org/doc/numpy-1.14.1/reference/routines.random.html
+import random  # https://docs.scipy.org/doc/numpy-1.14.1/reference/routines.random.html
 import pandas as pd
 
 t_inter = 7
@@ -8,11 +8,8 @@ t_inter = 7
 #     return np.random.exponential(t_inter)
 
 
-def generate_interarrival(t_inter, dist='exp'):
-    dists = {
-        'exp': np.random.exponential(t_inter),
-        'norm': np.random.normal(t_inter)
-    }
+def generate_interarrival(t_inter, dist="exp"):
+    dists = {"exp": np.random.exponential(t_inter), "norm": np.random.normal(t_inter)}
     return dists[dist]
 
 
@@ -21,11 +18,11 @@ def generate_interarrival(t_inter, dist='exp'):
 #     print(generate_interarrival(t_inter, 'norm'))
 
 
-df = pd.read_csv('tools.csv')
+df = pd.read_csv("tools.csv")
 # print(df)
 
 for i, rows in df.iterrows():
-    print(rows['EquipID'])
+    print(rows["EquipID"])
 
 
 print(len(df))

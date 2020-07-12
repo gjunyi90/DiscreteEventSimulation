@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/home/dylangoh/miniconda3/envs/simulation/bin/python",
+    "python.formatting.provider": "black"
+}
