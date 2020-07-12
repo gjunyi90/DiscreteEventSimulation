@@ -7,7 +7,7 @@ RANDOM_SEED = 42
 NUM_TOOLS = 1  # Number of tools in the workstation
 PROCESSTIME = 1  # Minutes it takes to process a lot
 T_INTER = 15  # Create a lot every ~7 minutes
-SIM_TIME = 100  # Simulation time in minutes
+SIM_TIME = 150  # Simulation time in minutes
 
 # EVENT TRACKING
 
